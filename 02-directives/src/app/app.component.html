@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Attribute Directives</h1>
+<h2>ngClass / ngStyle</h2>
+<!-- ngClass -->
+<div class="" [ngClass]="{ border : true , background:false }"></div><!-- It takes which property needs to be attached interms of true and false-->
+<div class="" [class.background]="true"></div><!-- Another way of doing the above ngClass  -->
+
+<!-- ngStyle -->
+<div [ngStyle]="{'background-color' : 'yellow'}"></div>
+
+<hr>
+
+<h1>Custom attribute Directives</h1>
+<div dirHighlight>Some Text....</div>
